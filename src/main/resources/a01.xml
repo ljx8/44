@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+        <!-- ios入门 -->
+        <!-- <bean id="user" class="a01.User"></bean> -->
+        
+        <!-- 使用静态工厂创建对象 -->
+        <!-- <bean id="bean" class="a02.BeanFactory" factory-method="getBean"></bean> -->
+        
+        <!-- 使用实例工厂创建对象 -->
+        <!-- 创建工厂的对象 -->
+        <!--  <bean id="bean1Factory" class="a02.Bean1Factory"></bean>
+        <bean id="bean1" factory-bean="bean1Factory" factory-method="getBean1"></bean> -->
+        
+        <!-- 使用有参构造注入屬性 -->
+        <!--  <bean id="demo" class="a03.PropertyDemo"> -->
+         <!-- 使用有參構造 -->
+         <!-- <constructor-arg name="username" value="柳威扣菊花"></constructor-arg>
+        </bean>  -->
+        
+        <!-- 使用set方法注入属性 -->
+        <bean id="book" class="a02.Book">
+        <!-- 注入属性值 
+          name属性值：类里面定义的属性值
+          value属性：设置具体的值
+        -->
+        <property name="bookname" value="柳威玉蒲团"></property>
+        </bean>
+</beans>
